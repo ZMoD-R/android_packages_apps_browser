@@ -273,6 +273,9 @@ public class TitleBar extends RelativeLayout {
                     / PROGRESS_MAX);
             if (mUseQuickControls && !isEditingUrl()) {
                 setShowProgressOnly(true);
+                if (!mShowing) {
+                    show();
+                }
             }
             if (!mShowing) {
                 show();
